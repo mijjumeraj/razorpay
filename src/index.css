@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===================================================================
+   🔵 RIPPLE EFFECT (FINAL)
+=================================================================== */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-span {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  background: rgba(255, 255, 255, 0.45);
+  pointer-events: none;
+  animation: ripple-animation 0.6s linear;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* ===================================================================
+   🔵 3D TILT CARD EFFECT
+=================================================================== */
+.tilt-card {
+  transition: transform 0.2s ease-out;
+  transform-style: preserve-3d;
+}
+
+.tilt-card-inner {
+  transform: translateZ(40px);
+}
+
+.tilt-shadow {
+  transition: opacity 0.2s ease-out;
+}
+
+/* ===================================================================
+   🔵 SCROLL REVEAL ANIMATION
+=================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================================================================
+   🔵 WAVE ANIMATION (used for subtle motion)
+=================================================================== */
+@keyframes waveMove {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(25px); }
+  100% { transform: translateX(0); }
+}
+
+.animate-wave {
+  animation: waveMove 6s ease-in-out infinite;
+}
+
+/* ===================================================================
+   🎨 SMOOTH SCROLLING GRADIENT BACKGROUND
+=================================================================== */
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #f4f4f7,
+    #eaeaf2,
+    #f7f7fb
+  );
+  background-size: 100% 400%;
+  animation: lightGradientScroll 16s ease infinite;
+}
+
+@keyframes lightGradientScroll {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 0% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+/* ===================================================================
+   🔵 NAVBAR UNDERLINE ANIMATION (RAZORPAY STYLE)
+=================================================================== */
+.nav-link {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #2563eb;
+  transition: width 0.25s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* No underline for mobile */
+.nav-link-mobile {
+  padding: 6px 0;
+}
+
+/* Soft premium card glow */
+.premium-shadow {
+  transition: opacity 0.3s ease;
+}
+
+.tilt-card {
+  will-change: transform;
+}
+/* Slide Up Animation */
+.slide-card {
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.slide-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.product-slide {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.product-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
