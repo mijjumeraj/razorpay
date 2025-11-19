@@ -34,43 +34,32 @@ Optimized for:
 ✔ Ultra-wide screens
 
 ⚛️ Powered By Modern Stack
-
 React – component-based architecture
-
 Vite – ultra-fast bundler
-
 Tailwind CSS – utility-first styling
-
 Intersection Observer for smooth scroll animations
-
 🏗️ Sections Included
-
 Hero Section
-
 Navbar with hover animation
-
 Testimonials section (Sliding reveal)
-
 Industry section
-
 Innovation section
-
 Products section
-
 RazorpayX section
-
 No-code products section (Cards with animations)
 
+## 📁 Project Structure
 
-├── dist/                # Production build
-├── src/
-│   ├── components/      # All UI components
-│   ├── App.jsx          # Main App file
-│   ├── index.css        # Tailwind + custom animations
-│   └── main.jsx         # App entry
-├── vite.config.js       # Vite config
-├── package.json         # Dependencies
-└── README.md            # Project docs
+razorpay/
+├── dist/ # Production build output
+├── src/ # Main source code
+│ ├── components/ # All UI components (Hero, Navbar, Animations, Sections)
+│ ├── App.jsx # Main app file
+│ ├── main.jsx # React entry file
+│ └── index.css # Tailwind + Custom animations
+├── vite.config.js # Vite configuration
+├── package.json # Dependencies & scripts
+└── README.md # Project documentation
 
 
 
@@ -124,33 +113,21 @@ Easy to upgrade or modify
 🧩 Customization
 
 You can customize:
-
 Colors
-
 Logos
-
 Animations
-
 Text content
-
 Sections order
-
 All components are separated in src/components.
 
 💡 Why I Built This Project
 
 This project is built to practice:
-
 Real-world UI layout
-
 Modern animations
-
 React + Vite workflow
-
 GitHub deployment
-
 Tailwind mastery
-
 Also great for:
 ✔ Portfolio
 ✔ Resume
