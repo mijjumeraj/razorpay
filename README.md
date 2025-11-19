@@ -83,8 +83,6 @@ No-code products section (Cards with animations)
 | **GitHub Pages / Vercel** | Deployment   |
 
 ⚙️ Install & Run Locally
-1️⃣ Clone Repository
-git clone https://https://mijjumeraj.github.io/razorpay/
 
 2️⃣ Install Dependencies
 npm install
