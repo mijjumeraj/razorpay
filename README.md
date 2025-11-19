@@ -84,7 +84,7 @@ No-code products section (Cards with animations)
 
 ⚙️ Install & Run Locally
 1️⃣ Clone Repository
-git clone https://github.com/your-username/razorpay.git
+git clone https://https://mijjumeraj.github.io/razorpay/
 
 2️⃣ Install Dependencies
 npm install
