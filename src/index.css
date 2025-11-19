@@ -57,7 +57,7 @@
 }
 
 /* ===================================================================
-   🔵 WAVE ANIMATION (used for subtle motion)
+   🔵 WAVE ANIMATION
 =================================================================== */
 @keyframes waveMove {
   0% { transform: translateX(0); }
@@ -72,7 +72,6 @@
 /* ===================================================================
    🎨 SMOOTH SCROLLING GRADIENT BACKGROUND
 =================================================================== */
-
 html, body {
   height: 100%;
   scroll-behavior: smooth;
@@ -97,7 +96,7 @@ body {
 }
 
 /* ===================================================================
-   🔵 NAVBAR UNDERLINE ANIMATION (RAZORPAY STYLE)
+   🔵 NAVBAR UNDERLINE ANIMATION
 =================================================================== */
 .nav-link {
   position: relative;
@@ -131,4 +130,31 @@ body {
 
 .tilt-card {
   will-change: transform;
+}
+
+/* ===================================================================
+   ⭐ ADDED: TESTIMONIAL SLIDE-IN ANIMATION
+=================================================================== */
+
+.testimonial-slide {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.7s ease-out;
+}
+
+.testimonial-slide.slide-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+/* ========== SLIDE-IN ANIMATION FOR NO-CODE CARDS ========== */
+
+.slide-card {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.slide-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }

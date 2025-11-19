@@ -6,7 +6,7 @@ export default function NoCodeProducts() {
       title: "Payment Links",
       desc: (
         <>
-          Accept payments instantly: <br />
+          Accept payments instantly:{" "}
           <span className="text-blue-600 font-semibold">
             Share links
           </span>{" "}
@@ -19,7 +19,7 @@ export default function NoCodeProducts() {
       title: "Payment Pages",
       desc: (
         <>
-          Accept payments without coding <br /> on a{" "}
+          Accept payments without coding on a{" "}
           <span className="text-blue-600 font-semibold">
             custom-branded store
           </span>
@@ -43,7 +43,7 @@ export default function NoCodeProducts() {
     },
   ];
 
-  // ⭐ Slide-in animation on scroll
+  // ⭐ Slide-in animation
   useEffect(() => {
     const cards = document.querySelectorAll(".slide-card");
 
@@ -63,16 +63,21 @@ export default function NoCodeProducts() {
 
   return (
     <section className="py-32 px-6 max-w-7xl mx-auto">
-      <p className="text-gray-500 text-lg">&lt;what html?&gt;</p>
 
+      {/* Razorpay style small gray tag */}
+      <p className="text-gray-500 text-lg">&lt;no-code products&gt;</p>
+
+      {/* Green heading */}
       <h2 className="text-4xl md:text-5xl font-extrabold text-green-600 mt-2">
         Not a developer?
       </h2>
 
+      {/* Main heading */}
       <h3 className="text-4xl md:text-5xl font-extrabold text-gray-900 mt-2">
         Our No-Code products have you covered
       </h3>
 
+      {/* Cards */}
       <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
         {items.map((item, i) => (
           <div
@@ -80,24 +85,28 @@ export default function NoCodeProducts() {
             style={{ transitionDelay: `${i * 0.2}s` }}
             className="
               slide-card opacity-0 translate-y-10
-              bg-white rounded-2xl p-8 shadow-md 
-              border border-gray-200 
-              hover:shadow-xl transition-all duration-300 
+              bg-white rounded-2xl p-8 shadow-md
+              border border-gray-200
+              hover:shadow-xl transition-all duration-300
               relative overflow-hidden
             "
           >
+            {/* Icon */}
             <div className="absolute top-6 right-6 text-4xl opacity-80">
               {item.icon}
             </div>
 
-            <h4 className="text-lg font-semibold text-gray-800">
+            {/* Title */}
+            <h4 className="text-xl font-semibold text-gray-800">
               {item.title}
             </h4>
 
-            <p className="mt-4 text-gray-700 leading-relaxed text-[17px]">
+            {/* Description */}
+            <p className="mt-4 text-gray-700 text-[18px] leading-relaxed">
               {item.desc}
             </p>
 
+            {/* Buttons */}
             <div className="flex justify-between items-center mt-8 text-blue-600 font-semibold">
               <button className="hover:text-blue-800 transition">
                 Sign Up →
