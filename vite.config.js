@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: "/razorpay/",   
+  base: "/razorpay-2/",   // 👈 Repo name EXACT match
 });
