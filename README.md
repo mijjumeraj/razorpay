@@ -29,8 +29,11 @@ Navbar hover underline (Razorpay-style)
 
 Optimized for:
 ✔ Mobile
+
 ✔ Tablet
+
 ✔ Laptop
+
 ✔ Ultra-wide screens
 
 ⚛️ Powered By Modern Stack
