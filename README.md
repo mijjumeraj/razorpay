@@ -135,14 +135,22 @@ All components are separated in src/components.
 
 This project is built to practice:
 Real-world UI layout
+
 Modern animations
+
 React + Vite workflow
+
 GitHub deployment
+
 Tailwind mastery
+
 Also great for:
 ✔ Portfolio
+
 ✔ Resume
+
 ✔ Interview assignment
+
 ✔ Learning modern frontend
 
 🤝 Contributing
