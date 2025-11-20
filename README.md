@@ -52,6 +52,7 @@ No-code products section (Cards with animations)
 
 razorpay/
 ├── dist/ # Production build output
+
 ├── src/ # Main source code
 │ ├── components/ # All UI components (Hero, Navbar, Animations, Sections)
 │ ├── App.jsx # Main app file
