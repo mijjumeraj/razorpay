@@ -54,12 +54,19 @@ razorpay/
 ├── dist/ # Production build output
 
 ├── src/ # Main source code
+
 │ ├── components/ # All UI components (Hero, Navbar, Animations, Sections)
+
 │ ├── App.jsx # Main app file
+
 │ ├── main.jsx # React entry file
+
 │ └── index.css # Tailwind + Custom animations
+
 ├── vite.config.js # Vite configuration
+
 ├── package.json # Dependencies & scripts
+
 └── README.md # Project documentation
 
 
